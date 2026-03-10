@@ -1,0 +1,57 @@
+/* 📁 ragchat/app/globals.css */
+
+@keyframes fu     { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+@keyframes bounce { 0%,80%,100%{transform:translateY(0)} 40%{transform:translateY(-5px)} }
+@keyframes spin   { to{transform:rotate(360deg)} }
+@keyframes blink  { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-thumb { background: #0a1828; border-radius: 4px; }
+
+input, textarea { outline: none; }
+button:not(:disabled):hover { opacity: 0.75; }
+
+/* markdown body */
+.md { font-size: 14px; color: #8ab4d4; line-height: 1.75; font-family: 'Fraunces', serif; }
+.md p { margin-bottom: 10px; }
+.md .h1 { font-size: 18px; font-weight: 600; color: #c5daf0; margin: 12px 0 6px; }
+.md .h2 { font-size: 16px; font-weight: 600; color: #b0cce8; margin: 10px 0 5px; }
+.md .h3 { font-size: 14px; font-weight: 600; color: #9ab8d0; margin: 8px 0 4px; }
+.md ul  { padding-left: 18px; margin-bottom: 8px; }
+.md li  { margin-bottom: 3px; }
+
+/* code blocks */
+.cb {
+  background: #040a14;
+  border: 1px solid #0a1828;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: #5eead4;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+/* inline code */
+.ic {
+  background: #040a14;
+  border: 1px solid #0a1828;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px;
+  color: #5eead4;
+}
+
+/* source reference badge */
+.sr {
+  background: rgba(96, 165, 250, 0.12);
+  color: #60a5fa;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+}
